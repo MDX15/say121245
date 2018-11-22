@@ -1,5 +1,5 @@
     client.on('message', message => {
-        var prefix = "-";
+        var prefix = "m#";
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
      
@@ -16,4 +16,5 @@
        
        
       });
+
 client.login(process.env.BOT_TOKEN);
